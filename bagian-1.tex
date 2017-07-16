@@ -1,0 +1,117 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+% - for list code
+\usepackage{color}
+\usepackage{listings}
+% - for list code
+
+% list code program
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolor}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolor},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  stringstyle=\color{codepurple},
+  basicstyle=\footnotesize,
+  breakatwhitespace=false,
+  breaklines=true,
+  captionpos=b,
+  keepspaces=true,
+  numbers=left,
+  numbersep=5pt,
+  showspaces=false,
+  showstringspaces=false,
+  showtabs=false,
+  tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\def\beamer@verbatimreadframe{%
+  \begingroup%
+  \let\do\beamer@makeinnocent\dospecials%
+  \count@=127%
+  \@whilenum\count@<255 \do{%
+    \advance\count@ by 1%
+    \catcode\count@=11%
+  }%
+  \beamer@makeinnocent\^^L% and whatever other special cases
+  \beamer@makeinnocent\^^I% <-- PATCH: allows tabs to be written to temp file
+  \endlinechar`\^^M \catcode`\^^M=12%
+  \@ifnextchar\bgroup{\afterassignment\beamer@specialprocessframefirstline\let\beamer@temp=}{\beamer@processframefirstline}}%
+
+% end list code program
+
+\title{Java}
+\subtitle{Bagian 1}
+\author{tamami}
+\institute{BPPKAD Kab. Brebes}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section{Perkenalan}
+\subsection{Apa sih?}
+
+%%% - frame 1
+
+\begin{frame}
+\frametitle{Java, apa?}
+
+\begin{itemize}
+	\item Java itu, compiler dan interpreter
+	\item Java itu, OOP
+\end{itemize}
+\end{frame}
+
+
+%%% - frame 2
+
+\begin{frame}
+\frametitle{Pasang yu}
+
+\begin{itemize}
+	\item JDK??
+	\item JRE??
+\end{itemize}
+\end{frame}
+
+
+%%% - frame 3
+
+\begin{frame}[fragile]
+\frametitle{Coba yu}
+\begin{lstlisting}
+public class Coba {
+  public static void main(String args[]) {
+    System.out.println("Hai, apa kabar?");
+  }
+}
+\end{lstlisting}
+\end{frame}
+
+
+%%% - frame 4
+
+\begin{frame}
+\frametitle{Ketentuan}
+Beberapa adat yang dilakukan :
+
+\begin{itemize}
+	\item CamelCase
+	\item Nama File = Nama Kelas
+	\item Nama Paket = Nama Direktori dalam \textit{Project}
+\end{itemize}
+
+\end{frame}
+
+\end{document}

@@ -1,0 +1,8 @@
+\frametitle{Coba yu}
+\begin{lstlisting}
+public class Coba {
+  public static void main(String args[]) {
+    System.out.println("Hai, apa kabar?");
+  }
+}
+\end{lstlisting}
