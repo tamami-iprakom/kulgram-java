@@ -1,0 +1,104 @@
+%%
+%% This is file `example_DarkConsole.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% examples_kmbeamer.dtx  (with options: `DarkConsole')
+%% Copyright (c) 2011-2013 Kazuki Maeda <kmaeda@users.sourceforge.jp>
+%% 
+%% Distributable under the MIT License:
+%% http://www.opensource.org/licenses/mit-license.php
+%% 
+
+%%% もし pdfTeX や LuaTeX を使うなら dvipdfmx オプションを外す．
+% \documentclass[dvipdfmx]{beamer}
+
+% Modified by LianTze Lim to work with fontspec/xelatex
+\documentclass{beamer}
+%\usepackage{mathspec}
+%\usepackage{xeCJK}
+%\setCJKmainfont{IPAPMincho}
+%\setCJKsansfont{IPAGothic}
+%\setCJKmonofont{IPAGothic}
+
+% You can set fonts for Latin script here
+%\setmainfont{FreeSerif}
+%\setsansfont{FreeSans}
+%\setmonofont{Latin Modern Mono}
+
+\usetheme{DarkConsole}
+
+%%% もし pTeX + dvipdfmx を使うならば以下のどちらかを環境に合わせてコメントアウト．
+%% \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}} % EUC の場合
+%% \AtBeginDvi{\special{pdf:tounicode 90ms-RKSJ-UCS2}} % SJIS の場合
+
+%%% もし LuaTeX で日本語を出力するなら以下をコメントアウト．
+%% \usefonttheme{luatexja}
+%% \hypersetup{unicode}
+
+%%% 日本語を使うなら以下を入れると定理環境中のフォントが立体になる．
+%%% 欧文なら不要．
+%%% LLT: Comment out this line if your presentation is in English or other European languages
+\setbeamertemplate{theorems}[normal font]
+
+\title{JAVA}
+\subtitle{TIPE DATA DAN PROPERTI}
+\author{tamami\footnote{\texttt{tamami.oka@gmail.com}}}
+
+\begin{document}
+
+\begin{frame}
+  \maketitle
+\end{frame}
+
+\begin{frame}{目次}
+  \tableofcontents
+\end{frame}
+
+\section{Tipe Data}
+
+\begin{frame}{Tipe Data di Java}
+	\begin{itemize}
+		\item Biner -> \texttt{boolean}
+		\item Karakter -> \texttt{char}
+		\item Angka -> \texttt{byte, short, int, long, float, double}; dan
+		\item void
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Tidak Ada Tipe Data Lain}
+  Semuanya tentang Kelas (Class)
+  
+  \begin{itemize}
+  	\item String
+  	\item BigInteger
+  	\item Date
+  	\item dan lain-lain
+  \end{itemize}
+\end{frame}
+
+
+\section{Properti}
+\begin{frame}{Apa itu properti?}
+	properti = variabel
+\end{frame}
+
+\begin{frame}{Lingkup dan Sifat}
+	Lingkupnya :
+	\begin{itemize}
+		\item public 
+		\item private
+	\end{itemize}
+	
+	Sifatnya :
+	\begin{itemize}
+		\item final
+		\item static
+	\end{itemize}
+\end{frame}
+
+\end{document}
+\endinput
+%%
+%% End of file `example_DarkConsole.tex'.

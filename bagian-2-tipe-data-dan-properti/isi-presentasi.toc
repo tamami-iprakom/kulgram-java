@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Tipe Data}{3}{0}{1}
+\beamer@sectionintoc {2}{Properti}{5}{0}{2}
