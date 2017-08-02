@@ -2,7 +2,7 @@
 
 ## Sumber untuk Download bahan
 
-### Java (JDK)
+### Tempat Unduh Java (JDK)
 
 www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html#javasejdk
 
